@@ -6,7 +6,8 @@ import Button from '@/app/components/button';
 // import CompanyFormModal from './company-form-modal';
 
 const CompanyFormModal = dynamic(() => import('./company-form-modal'), {
-  ssr: false,
+  // ssr: false,
+  loading: () => <h1 style={{color: "tomato", fontSize: "40px"}}>LOADING</h1>
 });
 
 export default function AddCompanyButton() {
