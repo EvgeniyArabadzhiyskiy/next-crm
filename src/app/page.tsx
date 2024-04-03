@@ -1,10 +1,14 @@
-import MyComp from './components/MyComp';
+import AddCompanyButton from '@/app/components/add-company-button';
+import ServerCompoent from './components/server-component';
 
 export default function Home() {
   return (
     <main>
-      <h1>Home Page</h1>
-      <MyComp />
+      <h1 className="text-xl">Home page</h1>
+      <AddCompanyButton />
+      {/* <ServerCompoent>
+        Next Js
+      </ServerCompoent> */}
     </main>
   );
 }
