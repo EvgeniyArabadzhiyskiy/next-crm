@@ -41,12 +41,29 @@ export const animatePageOut = (
   ?.set('#transition-element', { translateX: "0%", })
   .to('#transition-element', {
     translateX: "100%",
-    // x: 1290,
     duration: 0.3,
     onComplete: () => {
       router.push(href);
     },
   });
+
+  //========================================================
+  // gsap.timeline().set('#transition-element', { translateX: "50%",     borderTopLeftRadius: '50vh',
+  // borderBottomLeftRadius: '50vh', })
+  // .to('#transition-element', {
+  //   translateX: "100%",
+  //   duration: 5,
+  //   onComplete: () => {
+  //     router.push(href);
+  //   },
+  // });
+
+  //========================================================
+  // gsap.to('#transition-element', { translateX: "100%" }).then(() => {
+  //   router.push(href);
+  // });
+
+  //========================================================
 
   // timeLine
   //   ?.set('#transition-element', {
