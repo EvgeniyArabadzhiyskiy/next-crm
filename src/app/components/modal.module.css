@@ -1,0 +1,74 @@
+.buttonwrappere {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border-radius: 6px;
+  background-color: rgba(211, 27, 27, 0.754);
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255 255 255);
+}
+
+.dialog {
+  position: relative;
+  z-index: 10;
+}
+
+.modaloverlay {
+  position: fixed;
+  inset: 0;
+  
+  background-color: rgba(39, 39, 42, 0.75);
+  
+}
+
+.modaloverlay2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+.modalwindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+  padding: 16px;
+  text-align: center;
+}
+
+.dialogpanel {
+  width: 100%;
+  max-width: 448px;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: rgb(255 255 255);
+  padding: 24px;
+  text-align: left;
+  vertical-align: middle;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: rgb(17 24 39);
+}
